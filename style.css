@@ -21,8 +21,9 @@ body {
 }
 
 @media (max-width:768px) {
-  .header { text-align: center;
-}
+  .header { 
+    text-align: center;
+  }
 }
 
 .centered-main-page-element {
@@ -34,7 +35,7 @@ body {
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .task-row-wrapper {
@@ -106,6 +107,11 @@ input#new-task {
   width: 318px;
 }
 
+ul#incomplete-tasks label {
+  text-decoration: none;
+  color: #000000;
+}
+
 /* Task list */
 li {
   overflow: hidden;
@@ -135,19 +141,19 @@ li > input[type="text"] {
   width: 226px
 }
 
-button.delete img {
+button.del img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+button.del img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
 ul#completed-tasks label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
